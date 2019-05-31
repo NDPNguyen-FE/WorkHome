@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px black solid;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>BY</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablebody">
+
+        </tbody>
+    </table>
+    <button ></button>
+    
+    <script>
+        var product =[ {
+            "iphone":{
+                "name": 'IPHONE X',
+                "price": '899$',
+                "by":"VietNam",
+            },
+            "samsung":{
+                "name": 'SamSung Note 9',
+                "price": '900$',
+                "by": 'Korea',
+            },
+        }
+        ];
+
+        var tablebody = document.getElementById('tablebody');
+         for( var i = 0; i < product.length; i++ ){
+            var tr = document.createElement('tr');
+            var th = document.createElement('th');
+            var valueTh = document.createTextNode(i+1);
+            th.appendChild(valueTh);
+            tr.appendChild(th);
+            
+
+
+            var array = Object.keys(product[i]);
+            
+
+            var td = document.createElement('td');
+            var valueTd = document.createTextNode(product[i][array[0]].name);
+            td.appendChild(valueTd);
+            tr.appendChild(td);
+
+
+            var td = document.createElement('td');
+            var valueTd = document.createTextNode(product[i][array[0]].price);
+            td.appendChild(valueTd);
+            tr.appendChild(td);
+
+            var td = document.createElement('td');
+            var valueTd = document.createTextNode(product[i][array[0]].by);
+            td.appendChild(valueTd);
+            tr.appendChild(td);
+
+
+            tablebody.appendChild(tr);
+         
+         } 
+         
+        
+            
+    </script>
+</body>
+</html>

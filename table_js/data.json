@@ -1,0 +1,12 @@
+{
+    "iphone":{
+        "name": "IPHONE X",
+        "price": "899$",
+        "by":"VietNam"
+    },
+    "samsung":{
+        "name": "SamSung Note 9",
+        "price": "900$",
+        "by": "Korea"
+    }
+}

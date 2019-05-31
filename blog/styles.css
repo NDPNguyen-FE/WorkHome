@@ -1,0 +1,14 @@
+.Link{
+    cursor: pointer;
+    color: darkslategrey;
+    
+}
+.Link:hover{
+    color: gray
+}
+.image{
+    background-image:url(img.jpg);
+    background-repeat: no-repeat;
+    background-position: center -100px;
+    background-size: cover;
+}

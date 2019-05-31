@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <script>
+        function loadData(){
+            var http = new XMLHttpRequest();
+            http.onreadystatechange = function (){
+                if(http.readyState ===4){
+                    document.getElementById('h1').innerHTML = JSON.parse(http.responseText).name;
+                }
+            }
+            http.open('Get','data.json');
+            http.send();
+
+        }
+        loadData();
+    </script>
+</body>
+</html>

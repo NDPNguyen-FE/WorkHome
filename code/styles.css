@@ -1,0 +1,41 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.Link{
+    color:black;
+    cursor: pointer;
+    font-weight:  bolder;
+    margin: 0 15px 0 15px;
+    
+}
+.Link:hover{
+    color:darkgray;
+}
+.Firstslide{
+    height: 300px;
+    background-image: url(banner-sm.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+
+}
+.Secondslide{
+    height: 300px;
+    background-image: url(Logo2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+
+}
+.Thirdslide{
+    height: 300px;
+    background-image: url(softech-aptech-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+  
+
+}
+.card-deck{
+    position:inherit;
+}
