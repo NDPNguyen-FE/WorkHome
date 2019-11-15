@@ -1,0 +1,68 @@
+body {
+    font-family: 'Crimson Text', serif;
+    background-color: #F0F0F0;
+}
+
+.search {
+    background-color: white;
+    border-radius: 8px;
+    border: black;
+}
+
+.textSearch {
+    border: black;
+    border-radius: 25px;
+}
+
+.bg-nav {
+    background-color: black;
+    height: 60px;
+}
+
+.fa-2x {
+    color: black;
+}
+
+.nav-link {
+    color: black;
+    text-align: center;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    padding: 10px;
+}
+
+.nav-item:hover {
+    background-color: blanchedalmond;
+}
+
+.header {
+    height: 60px;
+}
+
+.product {
+    width: 85px;
+    font-size: 11px;
+    text-align: center;
+    padding-top: 10px;
+    height: 60px;
+}
+
+.product:hover {
+    background-color: white;
+    height: 60px;
+}
+
+.product>a {
+    color: black;
+    text-decoration: none;
+}
+
+.carousel-item {
+    background-size: cover;
+}
+
+.deal {
+    background-color: #ffffff;
+}
